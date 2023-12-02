@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8f3295e449.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Simulá tu crédito personal</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="titulo">
+            Prestamos Personales <span class="color">"Sindi  ♥  Nero"</span>
+        </div>
+        <div class="menu">
+        <nav>
+            <ul>
+                <li class="nav-list"> <a href="../index.html">Home</a></li>
+                <li class="nav-list"> <a href="../pages/clientes.html">clientes</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <div class="form">
+        <fieldset>
+            <h1>Simulá tu crédito personal</h1>
+            <form>
+                <div>
+                    <label for="dinero">Dinero a solicitar
+                        <input type="text" placeholder="Ingrese el $ a solicitar" id="dinero">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </label>
+                </div>
+                <div>
+                    <label for="couta">Coutas fijas 
+                        <input type="text" placeholder="Ingrese las cuotas (hasta 72)" id="couta">
+                        <i class="far fa-calendar-alt"></i>
+                    </label>
+                </div>
+                <div>
+                    <label for="interes">Intereses mensuales
+                        <input type="text" placeholder="Ingrese el interés a generar" id="interes">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                       
+                    </label>
+                </div>
+            </form>
+        <button onclick="gen_table();">CALCULAR</button>
+        </fieldset>
+        <hr>
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <td>Cuota N°</td>
+                    <td>Dinero entregado</td>
+                    <td>Intereses</td>
+                    <td>Total a pagar por mes</td>
+                </tr>
+            </thead>
+            <tbody id="tabla">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="ft">TOTAL</td>
+                    <td id="t1"></td>
+                    <td id="t2"></td>
+                    <td id="t3"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
+    <script src="../js/index.js"></script>
+
+    <footer> Power By:MomSter</footer>
+</body>
+</html>
